@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  background: #000;
+  color: #fff;
+  justify-content: space-between;
+  padding: 60px 60px;
+  align-items: flex-start;
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+
+    p {
+      color: #a7a6a6;
+
+      &:first-child {
+        color: #fff;
+        font-size: 14px;
+      }
+      span {
+        border-bottom: 2px solid #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer-center {
+    display: flex;
+    gap: 10px;
+    img {
+      width: 50px;
+      cursor: pointer;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
