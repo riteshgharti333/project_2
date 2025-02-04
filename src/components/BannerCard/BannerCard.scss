@@ -28,22 +28,55 @@
     p {
       font-size: 18px;
     }
+.bannerCard-buttons {
+  display: flex;
+  gap: 10px;
 
-    .bannerCard-buttons{
-      display: flex;
-      gap: 10px;
-      button {
-        width: fit-content;
-        background: #000;
-        border: none;
-        color: #fff;
-        font-size: 20px;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-      
-      }
+  button {
+    width: fit-content;
+    background: linear-gradient(135deg, #000, #333);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      background: linear-gradient(135deg, #444, #000);
+      transform: scale(1.05);
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     }
+
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+      transform: rotate(30deg);
+      transition: opacity 0.3s;
+      opacity: 0;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}
+
    
   }
 }
