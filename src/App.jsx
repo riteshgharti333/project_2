@@ -8,6 +8,7 @@ import Stationery from "./pages/Stationery/Stationery";
 import LabelsStickers from "./pages/LabelsStickers/LabelsStickers";
 import Stamps from "./pages/Stamps/Stamps";
 import OfficeSupplies from "./pages/OfficeSupplies/OfficeSupplies";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/labels-stickers" element={<LabelsStickers />} />
           <Route path="/stamps" element={<Stamps />} />
           <Route path="/office-supplies" element={<OfficeSupplies />} />
+          <Route path="/about-us" element={<About />} />
         </Routes>
         <Footer />
       </BrowserRouter>
