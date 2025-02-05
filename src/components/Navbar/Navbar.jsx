@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
 
         <div className="mobile-menu">
-          <MobileMenu />
+          {/* <MobileMenu /> */}
         </div>
 
         <div className="nav-right">
