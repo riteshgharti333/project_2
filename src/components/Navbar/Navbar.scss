@@ -17,6 +17,10 @@
     top: 0;
     z-index: 1000;
 
+    @include sm{
+      padding: 15px 5px;
+    }
+
     .nav-left {
       .logo {
         h1 {
@@ -38,10 +42,18 @@
       }
     }
 
+    .mobile-menu{
+      // width: 50%;
+    }
+
     .nav-right {
       display: flex;
       align-items: center;
       gap: 25px;
+
+      @include md{
+        display: none;
+      }
 
       .nav-link {
         font-size: 18px;
@@ -72,7 +84,11 @@
     border-top: 1px solid #e0e0e0;
     background: #fafafa;
 
-    @include lg {
+    @include lg{
+      gap: 10px;
+    }
+
+    @include md {
       display: none;
     }
 
@@ -83,6 +99,14 @@
       cursor: pointer;
       font-size: 14px;
       font-weight: 500;
+
+      @include xl{
+        font-size: 12px;
+      }
+
+      @include lg{
+        font-size: 10px;
+      }
 
       &:hover {
         color: #f56a01;

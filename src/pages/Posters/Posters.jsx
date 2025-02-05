@@ -7,10 +7,6 @@ import { cards } from "../../assets/data";
 const Posters = () => {
   return (
     <div className="posters">
-      <div className="posters-sidebar">
-        <Sidebar />
-      </div>
-
       <div className="posters-content">
         <div className="posters-banner">
           <div className="posters-banner-info">
@@ -20,8 +16,6 @@ const Posters = () => {
               business
             </p>
           </div>
-
-  
 
           <div className="posters-banner-img">
             <img src={poster_img} alt="" />
@@ -35,7 +29,7 @@ const Posters = () => {
 
               <div className="posters-cards">
                 {cards.map((card) => (
-                  <MainCard card={card} cardDesign="postersCard" />
+                  <MainCard key={card} card={card} cardDesign="postersCard" />
                 ))}
               </div>
             </div>

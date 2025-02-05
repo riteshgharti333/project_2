@@ -2,6 +2,7 @@ import "./Navbar.scss";
 
 import { nav_items } from "../../assets/data";
 import { Link } from "react-router-dom";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 const Navbar = () => {
   return (
@@ -13,8 +14,14 @@ const Navbar = () => {
           </div>
         </div>
 
+        <div className="mobile-menu">
+          <MobileMenu />
+        </div>
+
         <div className="nav-right">
           <Link to={"/about-us"} className="nav-link">About Us</Link>
+          <Link to={"/contact-us"} className="nav-link">Contact Us</Link>
+
         </div>
       </div>
 

@@ -38,9 +38,9 @@ const About = () => {
               <img src={card1} alt="" />
             </div>
             <p>
-              BS Printers was founded in 2008 by Shazab Ali, a passionate
+              BS Printers was founded in 2006 by Shahjad Ali, a passionate
               entrepreneur with a vision to revolutionize the printing industry
-              in Sikar, Rajasthan. With a deep love for stationery, painting,
+              in Sikar, Rajasthan. With a deep love for stationery printing,
               and high-quality printing, he started BS Printers to provide
               premium printing solutions. Over the years, we have grown into a
               trusted name, offering a wide range of printing services,

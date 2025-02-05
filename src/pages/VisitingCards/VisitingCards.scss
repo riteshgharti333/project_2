@@ -29,6 +29,10 @@
         width: 100%;
         text-align: center;
       }
+
+      @include sm{
+        font-size: 30px;
+      }
     }
   }
 

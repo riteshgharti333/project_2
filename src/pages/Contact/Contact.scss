@@ -1,0 +1,44 @@
+.contact {
+  h1 {
+    font-size: 60px;
+    margin: 60px 0px;
+    text-align: center;
+  }
+
+  .contact-container {
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+    gap: 10px;
+    .contact-left {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10px;
+        
+      .contact-left-top {
+        border: 1px solid red;
+        height: 400px;
+        width: 400px;
+
+      }
+
+      .contanct-left-bottom {
+        height: 400px;
+        border: 1px solid green;
+      }
+    }
+
+    .contact-right {
+      height: 800px;
+      width: 400px;
+
+
+      border: 1px solid black;
+    }
+  }
+}

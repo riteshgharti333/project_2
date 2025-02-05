@@ -1,0 +1,85 @@
+.bm-burger-button {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    right: 10px;
+
+    
+    @media (min-width: 769px) {
+        display: none;
+      }
+
+  }
+  
+  .bm-burger-bars {
+    background: #000;
+  }
+  
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+  
+  .bm-cross-button {
+        height: 40px;  /* Increase the height */
+        width: 40px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #000;
+  }
+  
+  .bm-menu-wrap {
+    position: fixed;
+    top: 0;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    // background: #373a47;
+    background-color: #fff;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #000;
+  }
+  
+ 
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 0 !important;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .bm-item:hover {
+    color: #ffffff;
+  }
+  
+  /////////////////////////////
+  
+
+  .menu-item{
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .mobile-links{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
