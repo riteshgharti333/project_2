@@ -10,6 +10,7 @@ import mission1 from "../../assets/images/svg-icons/mission1.svg";
 import mission2 from "../../assets/images/svg-icons/mission2.svg";
 import mission3 from "../../assets/images/svg-icons/mission3.svg";
 import mission4 from "../../assets/images/svg-icons/mission4.svg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -19,7 +20,10 @@ const About = () => {
           <h1>About Us</h1>
 
           <div className="banner-sm-desc">
+            <Link to={"/"}>
             <span className="home">Home</span>
+            
+            </Link>
             <span className="line">/</span>
             <span className="about-us">About Us</span>
           </div>
