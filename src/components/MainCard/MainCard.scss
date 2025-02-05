@@ -3,7 +3,7 @@
 .mainCard {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  // gap: 15px;
   width: 100%;
   border-radius: 15px;
   transition: all 0.3s ease;
@@ -42,8 +42,8 @@
     font-size: 18px;
     font-weight: 700;
     color: #333;
-    margin: 10px 0 5px;
     transition: color 0.3s ease;
+    margin-top: 20px;
 
    
 
