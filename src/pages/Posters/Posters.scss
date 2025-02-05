@@ -1,0 +1,188 @@
+@import "../../styles/responsive.scss";
+
+.posters {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  .posters-sidebar {
+    margin-left: 30px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 9;
+
+  }
+
+  .posters-content {
+    flex: 8;
+    z-index: 1;
+
+   
+    .posters-banner {
+      display: flex;
+      background: #5c5c5c;
+      height: 300px;
+      justify-content: space-between;
+      position: relative;
+
+      @include lg {
+        position: static;
+        align-items: center;
+        padding: 20px;
+        height: fit-content;
+      }
+
+      @include md {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 40px;
+      }
+
+      @include sm {
+        padding: 20px 10px;
+      }
+
+      .empty-div {
+        width: 400px;
+
+        @include xxxl {
+          width: 450px;
+        }
+
+        @include lg {
+          // width: 400px;
+          display: none;
+        }
+      }
+
+    
+
+      .posters-banner-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+
+        @include xl {
+          margin-left: 50px;
+        }
+
+        @include lg {
+          margin-left: 0px;
+        }
+
+        @include md {
+          width: 100%;
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      .posters-banner-img {
+        padding: 20px;
+        width: 500px;
+        display: flex;
+        justify-content: end;
+        @include lg {
+          padding: 0;
+          justify-content: end;
+        }
+
+        @include md {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 15px;
+          object-position: right center;
+          object-fit: cover;
+          @include lg {
+            height: 250px;
+            padding: 0;
+          }
+
+          @include md {
+            width: 100%;
+            height: 350px;
+          }
+        }
+      }
+    }
+
+    .posters-lists-container {
+      display: flex;
+      .set-size {
+        
+        min-width: 333px;
+
+        @include lg{
+          display: none;
+        }
+      }
+
+      .posters-lists {
+       display: flex;
+       flex-direction: column;
+       gap: 50px;
+       margin: 30px 10px;
+        @include lg {
+          margin: 30px 20px;
+        }
+
+        @include md {
+          margin: 30px 20px;
+        }
+
+        @include sm {
+          margin: 30px 10px;
+        }
+
+        .posters-items {
+          h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+
+            @include sm {
+              font-size: 25px;
+            }
+          }
+
+          .posters-cards {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px 10px;
+
+            @include xxl {
+              grid-template-columns: repeat(5, 1fr);
+            }
+
+            @include xl {
+              grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include lg {
+              grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include md {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include sm {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+        }
+      }
+    }
+  }
+}

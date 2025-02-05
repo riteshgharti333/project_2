@@ -1,0 +1,198 @@
+@import "../../styles/responsive.scss";
+
+.visitingCards {
+  overflow: hidden;
+
+  .visitingCards-banner {
+    position: relative;
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+
+      @include md {
+        filter: brightness(0.6);
+      }
+    }
+
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #fff;
+
+      @include md {
+        left: 50%;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .visitingCards-container {
+    margin: 30px 50px;
+
+    @include lg{
+      margin: 30px 20px;
+    }
+
+    @include md{
+      margin: 30px 20px;
+    }
+
+    @include sm{
+      margin: 30px 10px;
+    }
+
+    h2 {
+      font-size: 30px;
+
+      @include sm{
+        font-size: 25px;
+      }
+    }
+
+    .visitingCards-desc {
+      margin: 25px 0px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .visiting-cards {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px 10px;
+
+      @include xxl{
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      @include xl{
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include lg{
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+
+      @include md{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include sm{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .visitingCards-container-cards {
+      display: flex;
+      gap: 20px;
+      .special-card {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        transition: all 0.3s ease;
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        img {
+          width: 100%;
+          border-radius: 15px;
+        }
+
+        .special-cards-title {
+          font-size: 18px;
+          font-weight: 700;
+          color: #333;
+          margin: 10px 0 5px;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #f56a01;
+          }
+        }
+
+        .price {
+          font-size: 14px;
+          color: #666;
+          font-weight: 500;
+          line-height: 1.5;
+          margin: 0;
+        }
+      }
+    }
+
+    .visitingCards-container-top {
+      display: flex;
+      justify-content: space-between;
+
+      @include md{
+        flex-direction: column;
+      }
+
+      p {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @include md{
+         margin-top: 10px;
+        }
+
+        &:hover {
+          color: #333;
+        }
+
+        .right-arrow {
+          font-size: 20px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .visitingCards-container-cards-2 {
+      display: flex;
+      gap: 20px;
+  
+
+      @include lg{
+        overflow-x: auto;
+      }
+      .special-card-2 {
+        transition: all 0.3s ease;
+       
+        @include md{
+          margin-top: 10px;
+          
+        }
+        &:hover {
+          transform: translateY(-5px);
+        }
+        img {
+          height: 200px;
+          border-radius: 50%;
+        }
+        .special-cards2-title {
+          font-size: 18px;
+          font-weight: 700;
+          color: #333;
+          margin: 10px 0 5px;
+          transition: color 0.3s ease;
+          text-align: center;
+
+          &:hover {
+            color: #f56a01;
+          }
+        }
+      }
+    }
+  }
+}

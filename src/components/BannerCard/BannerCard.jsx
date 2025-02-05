@@ -3,7 +3,9 @@ import "./BannerCard.scss";
 const BannerCard = ({ banner }) => {
   return (
     <div className="BannerCard">
-      <img src={banner.image} alt="" />
+      <div className="banner-card-img">
+        <img src={banner.image} alt="" />
+      </div>
 
       <div className="bannerCard-info">
         <h2>{banner.title}</h2>
