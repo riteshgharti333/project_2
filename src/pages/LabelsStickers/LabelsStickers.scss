@@ -5,52 +5,25 @@
   position: relative;
   overflow: hidden;
 
-  .labelsStickers-sidebar {
-    margin-left: 30px;
-    margin-top: 30px;
-    position: absolute;
-    z-index: 9;
-  }
-
   .labelsStickers-content {
-    flex: 8;
-    z-index: 1;
     .labelsStickers-banner {
       display: flex;
       background: #5c5c5c;
       height: 300px;
       justify-content: space-between;
-      position: relative;
+      padding: 20px;
+      gap: 5px;
 
       @include lg {
-        position: static;
-        align-items: center;
         padding: 20px;
-        height: fit-content;
       }
 
       @include md {
         flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
+        height: fit-content;
+        text-align: center;
         gap: 40px;
-      }
-
-      @include sm {
         padding: 20px 10px;
-      }
-
-      .empty-div {
-        width: 400px;
-
-        @include xxxl {
-          width: 450px;
-        }
-
-        @include lg {
-          // width: 400px;
-          display: none;
-        }
       }
 
       .labelsStickers-banner-info {
@@ -58,24 +31,15 @@
         flex-direction: column;
         justify-content: center;
         color: #fff;
-        gap: 10px;
+        gap: 20px;
 
-        @include xl {
-          margin-left: 50px;
-        }
-
-        @include lg {
-          margin-left: 0px;
-        }
-
-        @include md {
-          width: 100%;
-          text-align: center;
+        @include md{
           align-items: center;
         }
 
         h2 {
-          font-size: 30px;
+          font-size: 40px;
+          
         }
 
         p {
@@ -134,20 +98,19 @@
             }
           }
         }
+
       }
 
       .labelsStickers-banner-img {
-        padding: 20px;
-        width: 500px;
         display: flex;
-        justify-content: end;
-        @include lg {
-          padding: 0;
-          justify-content: end;
-        }
+        width: 600px;
 
+        @include lg{
+          width: 400px;
+        }
         @include md {
           width: 100%;
+          height: 300px;
         }
 
         img {
@@ -155,28 +118,12 @@
           border-radius: 15px;
           object-position: right center;
           object-fit: cover;
-          @include lg {
-            height: 250px;
-            padding: 0;
-          }
-
-          @include md {
-            width: 100%;
-            height: 350px;
-          }
         }
       }
     }
 
     .labelsStickers-lists-container {
       display: flex;
-      .set-size {
-        min-width: 333px;
-
-        @include lg {
-          display: none;
-        }
-      }
 
       .labelsStickers-lists {
         display: flex;

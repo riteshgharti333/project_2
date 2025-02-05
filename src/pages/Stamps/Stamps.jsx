@@ -7,13 +7,9 @@ import { cards } from "../../assets/data";
 const Stamps = () => {
   return (
     <div className="stamps">
-      <div className="stamps-sidebar">
-        <Sidebar />
-      </div>
 
       <div className="stamps-content">
         <div className="stamps-banner">
-          <div className="empty-div"></div>
           <div className="stamps-banner-info">
             <h2>Custom Stamps & Ink</h2>
             <p>
@@ -21,7 +17,6 @@ const Stamps = () => {
               personalised stamps.
             </p>
           </div>
-          <div></div>
 
           <div className="stamps-banner-img">
             <img src={poster_img} alt="" />
@@ -29,7 +24,6 @@ const Stamps = () => {
         </div>
 
         <div className="stamps-lists-container">
-          <div className="set-size"></div>
 
           <div className="stamps-lists">
             <div className="stamps-items">

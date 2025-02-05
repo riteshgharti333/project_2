@@ -13,7 +13,6 @@ const Posters = () => {
 
       <div className="posters-content">
         <div className="posters-banner">
-<div className="empty-div"></div>
           <div className="posters-banner-info">
             <h2>Signs, Posters & Marketing Materials</h2>
             <p>
@@ -30,32 +29,9 @@ const Posters = () => {
         </div>
 
         <div className="posters-lists-container">
-          <div className="set-size"></div>
-
           <div className="posters-lists">
             <div className="posters-items">
               <h1>Best Sellers</h1>
-
-              <div className="posters-cards">
-                {cards.map((card) => (
-                  <MainCard card={card} cardDesign="postersCard" />
-                ))}
-              </div>
-            </div>
-
-            <div className="posters-items">
-              <h1>More in Signage</h1>
-
-              <div className="posters-cards">
-                {cards.map((card) => (
-                  <MainCard card={card} cardDesign="postersCard" />
-                ))}
-              </div>
-            </div>
-
-
-            <div className="posters-items">
-              <h1>More in Marketing Materials</h1>
 
               <div className="posters-cards">
                 {cards.map((card) => (

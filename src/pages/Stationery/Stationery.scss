@@ -3,53 +3,27 @@
 .stationery {
   display: flex;
   position: relative;
-
-  .stationery-sidebar {
-    margin-left: 30px;
-    margin-top: 30px;
-    position: absolute;
-    z-index: 9;
-  }
+  overflow: hidden;
 
   .stationery-content {
-    flex: 8;
-    z-index: 1;
     .stationery-banner {
       display: flex;
       background: #5c5c5c;
       height: 300px;
       justify-content: space-between;
-      position: relative;
+      padding: 20px;
+      gap: 5px;
 
       @include lg {
-        position: static;
-        align-items: center;
         padding: 20px;
-        height: fit-content;
       }
 
       @include md {
         flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
+        height: fit-content;
+        text-align: center;
         gap: 40px;
-      }
-
-      @include sm {
         padding: 20px 10px;
-      }
-
-      .empty-div {
-        width: 400px;
-
-        @include xxxl {
-          width: 450px;
-        }
-
-        @include lg {
-          // width: 400px;
-          display: none;
-        }
       }
 
       .stationery-banner-info {
@@ -57,24 +31,11 @@
         flex-direction: column;
         justify-content: center;
         color: #fff;
-
-
-        @include xl {
-          margin-left: 50px;
-        }
-
-        @include lg {
-          margin-left: 0px;
-        }
-
-        @include md {
-          width: 100%;
-          text-align: center;
-        }
+        gap: 20px;
 
         h2 {
-          font-size: 30px;
-          margin-bottom: 10px;
+          font-size: 40px;
+        
         }
 
         p {
@@ -83,17 +44,12 @@
       }
 
       .stationery-banner-img {
-        padding: 20px;
-        width: 500px;
         display: flex;
-        justify-content: end;
-        @include lg {
-          padding: 0;
-          justify-content: end;
-        }
+        width: 600px;
 
         @include md {
           width: 100%;
+          height: 300px;
         }
 
         img {
@@ -101,85 +57,67 @@
           border-radius: 15px;
           object-position: right center;
           object-fit: cover;
-          @include lg {
-            height: 250px;
-            padding: 0;
-          }
-
-          @include md {
-            width: 100%;
-            height: 350px;
-          }
         }
       }
     }
 
     .stationery-lists-container {
       display: flex;
-     
-      .set-size {
-        
-        min-width: 333px;
-
-        @include lg{
-          display: none;
-        }
-      }
 
       .stationery-lists {
         display: flex;
         flex-direction: column;
         gap: 50px;
         margin: 30px 10px;
-         @include lg {
-           margin: 30px 20px;
-         }
- 
-         @include md {
-           margin: 30px 20px;
-         }
- 
-         @include sm {
-           margin: 30px 10px;
-         }
- 
-         .stationery-items {
-           h1 {
-             font-size: 30px;
-             margin-bottom: 20px;
- 
-             @include sm {
-               font-size: 25px;
-             }
-           }
- 
-           .stationery-cards {
-             display: grid;
-             grid-template-columns: repeat(6, 1fr);
-             gap: 20px 10px;
- 
-             @include xxl {
-               grid-template-columns: repeat(5, 1fr);
-             }
- 
-             @include xl {
-               grid-template-columns: repeat(3, 1fr);
-             }
- 
-             @include lg {
-               grid-template-columns: repeat(3, 1fr);
-             }
- 
-             @include md {
-               grid-template-columns: repeat(2, 1fr);
-             }
- 
-             @include sm {
-               grid-template-columns: repeat(2, 1fr);
-             }
-           }
-         }
-       }
+        @include lg {
+          margin: 30px 20px;
+        }
+
+        @include md {
+          margin: 30px 20px;
+        }
+
+        @include sm {
+          margin: 30px 10px;
+        }
+
+        .stationery-items {
+          h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+
+            @include sm {
+              font-size: 25px;
+            }
+          }
+
+          .stationery-cards {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px 10px;
+
+            @include xxl {
+              grid-template-columns: repeat(5, 1fr);
+            }
+
+            @include xl {
+              grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include lg {
+              grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include md {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include sm {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+        }
+      }
     }
   }
 }

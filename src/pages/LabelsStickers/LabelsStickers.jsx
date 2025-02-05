@@ -13,7 +13,6 @@ const LabelsStickers = () => {
 
       <div className="labelsStickers-content">
         <div className="labelsStickers-banner">
-          <div className="empty-div"></div>
           <div className="labelsStickers-banner-info">
             <h2>Labels, Stickers & Packaging</h2>
             <p>
@@ -34,41 +33,9 @@ const LabelsStickers = () => {
         </div>
 
         <div className="labelsStickers-lists-container">
-          <div className="set-size"></div>
-
           <div className="labelsStickers-lists">
             <div className="labelsStickers-items">
               <h1>Custom Labels</h1>
-
-              <div className="labelsStickers-cards">
-                {cards.map((card) => (
-                  <MainCard card={card} cardDesign="labelsStickersCard" />
-                ))}
-              </div>
-            </div>
-
-            <div className="labelsStickers-items">
-              <h1>Custom Stickers</h1>
-
-              <div className="labelsStickers-cards">
-                {cards.map((card) => (
-                  <MainCard card={card} cardDesign="labelsStickersCard" />
-                ))}
-              </div>
-            </div>
-
-            <div className="labelsStickers-items">
-              <h1>Custom Tags</h1>
-
-              <div className="labelsStickers-cards">
-                {cards.map((card) => (
-                  <MainCard card={card} cardDesign="labelsStickersCard" />
-                ))}
-              </div>
-            </div>
-
-            <div className="labelsStickers-items">
-              <h1>Custom Packaging</h1>
 
               <div className="labelsStickers-cards">
                 {cards.map((card) => (

@@ -25,41 +25,7 @@ const VisitingCards = () => {
           ))}
         </div>
       </div>
-
-      <div className="visitingCards-container">
-        <h2>Shop By Papers & Textures</h2>
-        <p className="visitingCards-desc">Most Popular</p>
-
-        <div className="visiting-cards">
-          {cards.map((card) => (
-            <MainCard card={card} />
-          ))}
-        </div>
-      </div>
-
-      <div className="visitingCards-container">
-        <h2>Shop Specialty Business Cards</h2>
-
-        <p className="visitingCards-desc">
-          Make a statement with our selection of specialty cards, intended for
-          unique projects and uses
-        </p>
-
-        <div className="visitingCards-container-cards">
-          <div className="special-card">
-            <img src={card2} alt="" />
-            <p className="special-cards-title">NFC Visiting Cards</p>
-            <p className="price">1 Starting at ₹2300.000</p>
-          </div>
-
-          <div className="special-card">
-            <img src={card2} alt="" />
-            <p className="special-cards-title">NFC Visiting Cards</p>
-            <p className="price">1 Starting at ₹2300.000</p>
-          </div>
-        </div>
-      </div>
-
+{/* 
       <div className="visitingCards-container">
         <div className="visitingCards-container-top">
         <h2>Creative ways to use your cards</h2>
@@ -94,7 +60,7 @@ const VisitingCards = () => {
             <p className="special-cards2-title">Beauty & Spa</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
