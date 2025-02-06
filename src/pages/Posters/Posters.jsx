@@ -1,5 +1,5 @@
-import Sidebar from "../../components/Sidebar/Sidebar";
 import "./Posters.scss";
+
 import poster_img from "../../assets/images/poster.jpg";
 import MainCard from "../../components/MainCard/MainCard";
 import { cards } from "../../assets/data";
@@ -25,7 +25,7 @@ const Posters = () => {
         <div className="posters-lists-container">
           <div className="posters-lists">
             <div className="posters-items">
-              <h1>Best Sellers</h1>
+              <h2>Best Sellers</h2>
 
               <div className="posters-cards">
                 {cards.map((card) => (

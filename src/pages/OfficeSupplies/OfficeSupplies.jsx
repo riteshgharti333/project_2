@@ -1,5 +1,5 @@
-import Sidebar from "../../components/Sidebar/Sidebar";
 import "./OfficeSupplies.scss";
+
 import poster_img from "../../assets/images/poster.jpg";
 import MainCard from "../../components/MainCard/MainCard";
 import { cards } from "../../assets/data";
@@ -7,8 +7,6 @@ import { cards } from "../../assets/data";
 const OfficeSupplies = () => {
   return (
     <div className="officeSupplies">
-    
-
       <div className="officeSupplies-content">
         <div className="officeSupplies-banner">
           <div className="officeSupplies-banner-info">
@@ -24,7 +22,7 @@ const OfficeSupplies = () => {
         <div className="officeSupplies-lists-container">
           <div className="officeSupplies-lists">
             <div className="officeSupplies-items">
-              <h1>Best Sellers</h1>
+              <h2>Best Sellers</h2>
 
               <div className="officeSupplies-cards">
                 {cards.map((card) => (

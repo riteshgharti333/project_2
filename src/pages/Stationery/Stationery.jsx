@@ -1,5 +1,5 @@
-import Sidebar from "../../components/Sidebar/Sidebar";
 import "./Stationery.scss";
+
 import poster_img from "../../assets/images/poster.jpg";
 import MainCard from "../../components/MainCard/MainCard";
 import { cards } from "../../assets/data";
@@ -7,10 +7,6 @@ import { cards } from "../../assets/data";
 const Stationery = () => {
   return (
     <div className="stationery">
-      <div className="stationery-sidebar">
-        <Sidebar />
-      </div>
-
       <div className="stationery-content">
         <div className="stationery-banner">
           <div className="stationery-banner-info">
@@ -25,7 +21,7 @@ const Stationery = () => {
         <div className="stationery-lists-container">
           <div className="stationery-lists">
             <div className="stationery-items">
-              <h1>Best Sellers</h1>
+              <h2>Best Sellers</h2>
 
               <div className="stationery-cards">
                 {cards.map((card) => (

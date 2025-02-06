@@ -22,7 +22,7 @@
       object-fit: cover;
       filter: brightness(0.9);
 
-      @include md{
+      @include md {
         height: 300px;
         border-radius: 10px;
       }
@@ -48,19 +48,18 @@
     width: 50%;
     border-radius: 10px;
     max-width: 600px;
-  
 
-    @include xxl{
+    @include xxl {
       left: 30%;
     }
 
-    @include xl{
+    @include xl {
       width: 70%;
       left: 30%;
     }
 
-    @include lg{
-left: 40%;
+    @include lg {
+      left: 40%;
     }
 
     @include md {
@@ -73,9 +72,10 @@ left: 40%;
 
     h2 {
       font-size: 30px;
-    
-      @include md{
+
+      @include md {
         text-align: center;
+        font-size: 25px;
       }
     }
 

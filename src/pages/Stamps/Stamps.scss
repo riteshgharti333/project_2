@@ -8,7 +8,7 @@
   .stamps-content {
     .stamps-banner {
       display: flex;
-    background: #5c5c5c;
+      background: #5c5c5c;
       height: 300px;
       justify-content: space-between;
       padding: 20px;
@@ -35,11 +35,22 @@
 
         h2 {
           font-size: 40px;
-          
+
+          @include lg {
+            font-size: 35px;
+          }
+
+          @include sm {
+            font-size: 30px;
+          }
         }
 
         p {
           font-size: 20px;
+
+          @include lg {
+            font-size: 18px;
+          }
         }
       }
 
@@ -82,7 +93,7 @@
         }
 
         .stamps-items {
-          h1 {
+          h2 {
             font-size: 30px;
             margin-bottom: 20px;
 

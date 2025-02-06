@@ -1,4 +1,5 @@
 import "./Navbar.scss";
+
 import { useState } from "react";
 import { nav_items } from "../../assets/data";
 import { Link } from "react-router-dom";
@@ -12,12 +13,14 @@ const Navbar = () => {
       <div className="navbar">
         <div className="nav-left">
           <div className="logo">
-            <h1>LOGO</h1>
+            <Link to={"/"}>
+              <h1>LOGO</h1>
+            </Link>
           </div>
         </div>
 
         <div className="mobile-menu">
-          {/* <MobileMenu /> */}
+          <MobileMenu />
         </div>
 
         <div className="nav-right">
@@ -27,13 +30,13 @@ const Navbar = () => {
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
             <p className="nav-link">Services</p>
-            
+
             {isDropdownOpen && (
               <div className="dropdown-content">
                 {nav_items.map((item, index) => (
-                  <Link 
-                    key={index} 
-                    to={`/${item.nav_items_link}`} 
+                  <Link
+                    key={index}
+                    to={`/${item.nav_items_link}`}
                     className="dropdown-link"
                   >
                     {item.nav_items_name}

@@ -1,9 +1,9 @@
-import { sidebar_Content } from '../../assets/data'
-import './Sidebar.scss';
+import { sidebar_Content } from "../../assets/data";
+import "./Sidebar.scss";
 
 const Sidebar = () => {
   return (
-    <div className='sidebar'>
+    <div className="sidebar">
       {sidebar_Content.map((category, index) => (
         <div key={index} className="sidebar-category">
           <h2>{category.title}</h2>

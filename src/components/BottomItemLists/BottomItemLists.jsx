@@ -1,6 +1,7 @@
+import "./BottomItemLists.scss";
+
 import { category } from "../../assets/data";
 import CategoryItem from "../CategoryItem/CategoryItem";
-import "./BottomItemLists.scss";
 
 import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,26 +12,35 @@ const BottomItemLists = () => {
     <div className="bottomItemLists">
       {category.slice(3, 4).map((categoryItem, index) => (
         <div key={index} className="categories">
-          <h1>{categoryItem.category_name}</h1>
+          <h2>{categoryItem.category_name}</h2>
 
           <Swiper
             modules={[Navigation]}
             spaceBetween={0}
-            slidesPerView={1}
+            slidesPerView={2}
             navigation
             breakpoints={{
-              // when window width is >= 640px
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              // when window width is >= 768px
-              768: {
+              480: {
                 slidesPerView: 3,
                 spaceBetween: 10,
               },
-              // when window width is >= 1024px
+              620: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+              },
               1024: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+              1200: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+              },
+              1400: {
                 slidesPerView: 6,
                 spaceBetween: 10,
               },

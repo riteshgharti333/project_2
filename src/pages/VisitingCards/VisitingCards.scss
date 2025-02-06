@@ -30,7 +30,7 @@
         text-align: center;
       }
 
-      @include sm{
+      @include sm {
         font-size: 30px;
       }
     }
@@ -39,22 +39,22 @@
   .visitingCards-container {
     margin: 30px 50px;
 
-    @include lg{
+    @include lg {
       margin: 30px 20px;
     }
 
-    @include md{
+    @include md {
       margin: 30px 20px;
     }
 
-    @include sm{
+    @include sm {
       margin: 30px 10px;
     }
 
     h2 {
       font-size: 30px;
 
-      @include sm{
+      @include sm {
         font-size: 25px;
       }
     }
@@ -70,24 +70,23 @@
       grid-template-columns: repeat(6, 1fr);
       gap: 20px 10px;
 
-      @include xxl{
+      @include xxl {
         grid-template-columns: repeat(5, 1fr);
       }
 
-      @include xl{
+      @include xl {
         grid-template-columns: repeat(4, 1fr);
       }
 
-      @include lg{
+      @include lg {
         grid-template-columns: repeat(3, 1fr);
       }
 
-
-      @include md{
+      @include md {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      @include sm{
+      @include sm {
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -137,7 +136,7 @@
       display: flex;
       justify-content: space-between;
 
-      @include md{
+      @include md {
         flex-direction: column;
       }
 
@@ -147,8 +146,8 @@
         align-items: center;
         cursor: pointer;
 
-        @include md{
-         margin-top: 10px;
+        @include md {
+          margin-top: 10px;
         }
 
         &:hover {
@@ -165,17 +164,15 @@
     .visitingCards-container-cards-2 {
       display: flex;
       gap: 20px;
-  
 
-      @include lg{
+      @include lg {
         overflow-x: auto;
       }
       .special-card-2 {
         transition: all 0.3s ease;
-       
-        @include md{
+
+        @include md {
           margin-top: 10px;
-          
         }
         &:hover {
           transform: translateY(-5px);

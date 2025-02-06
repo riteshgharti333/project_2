@@ -1,5 +1,5 @@
-import Sidebar from "../../components/Sidebar/Sidebar";
 import "./LabelsStickers.scss";
+
 import poster_img from "../../assets/images/poster.jpg";
 import MainCard from "../../components/MainCard/MainCard";
 import { cards } from "../../assets/data";
@@ -7,10 +7,6 @@ import { cards } from "../../assets/data";
 const LabelsStickers = () => {
   return (
     <div className="labelsStickers">
-      <div className="labelsStickers-sidebar">
-        <Sidebar />
-      </div>
-
       <div className="labelsStickers-content">
         <div className="labelsStickers-banner">
           <div className="labelsStickers-banner-info">
@@ -35,7 +31,7 @@ const LabelsStickers = () => {
         <div className="labelsStickers-lists-container">
           <div className="labelsStickers-lists">
             <div className="labelsStickers-items">
-              <h1>Custom Labels</h1>
+              <h2>Custom Labels</h2>
 
               <div className="labelsStickers-cards">
                 {cards.map((card) => (

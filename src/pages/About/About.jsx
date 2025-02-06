@@ -1,4 +1,6 @@
 import "./About.scss";
+import { Link } from "react-router-dom";
+
 import icon1 from "../../assets/images/svg-icons/icon1.svg";
 import icon2 from "../../assets/images/svg-icons/icon2.svg";
 import icon3 from "../../assets/images/svg-icons/icon3.svg";
@@ -10,7 +12,6 @@ import mission1 from "../../assets/images/svg-icons/mission1.svg";
 import mission2 from "../../assets/images/svg-icons/mission2.svg";
 import mission3 from "../../assets/images/svg-icons/mission3.svg";
 import mission4 from "../../assets/images/svg-icons/mission4.svg";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -21,8 +22,7 @@ const About = () => {
 
           <div className="banner-sm-desc">
             <Link to={"/"}>
-            <span className="home">Home</span>
-            
+              <span className="home">Home</span>
             </Link>
             <span className="line">/</span>
             <span className="about-us">About Us</span>
@@ -40,12 +40,12 @@ const About = () => {
             <p>
               BS Printers was founded in 2006 by Shahjad Ali, a passionate
               entrepreneur with a vision to revolutionize the printing industry
-              in Sikar, Rajasthan. With a deep love for stationery printing,
-              and high-quality printing, he started BS Printers to provide
-              premium printing solutions. Over the years, we have grown into a
-              trusted name, offering a wide range of printing services,
-              including letterheads, flex banners, business cards, brochures,
-              wedding cards, packaging materials, and more.
+              in Sikar, Rajasthan. With a deep love for stationery printing, and
+              high-quality printing, he started BS Printers to provide premium
+              printing solutions. Over the years, we have grown into a trusted
+              name, offering a wide range of printing services, including
+              letterheads, flex banners, business cards, brochures, wedding
+              cards, packaging materials, and more.
             </p>
           </div>
         </div>
@@ -211,7 +211,10 @@ const About = () => {
 
         <div className="about-content6">
           <p>
-          At BS Printers, we take pride in bringing your ideas to life with high-quality printing and creative designs. Whether you need marketing materials for your business or personalized prints for special occasions, we are here to serve you with excellence.
+            At BS Printers, we take pride in bringing your ideas to life with
+            high-quality printing and creative designs. Whether you need
+            marketing materials for your business or personalized prints for
+            special occasions, we are here to serve you with excellence.
           </p>
         </div>
       </div>

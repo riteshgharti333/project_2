@@ -1,5 +1,5 @@
-import Sidebar from "../../components/Sidebar/Sidebar";
 import "./Stamps.scss";
+
 import poster_img from "../../assets/images/poster.jpg";
 import MainCard from "../../components/MainCard/MainCard";
 import { cards } from "../../assets/data";
@@ -7,7 +7,6 @@ import { cards } from "../../assets/data";
 const Stamps = () => {
   return (
     <div className="stamps">
-
       <div className="stamps-content">
         <div className="stamps-banner">
           <div className="stamps-banner-info">
@@ -24,10 +23,9 @@ const Stamps = () => {
         </div>
 
         <div className="stamps-lists-container">
-
           <div className="stamps-lists">
             <div className="stamps-items">
-              <h1>Custom Stamps</h1>
+              <h2>Custom Stamps</h2>
 
               <div className="stamps-cards">
                 {cards.map((card) => (

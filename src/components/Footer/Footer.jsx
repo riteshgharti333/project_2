@@ -1,4 +1,4 @@
-import "./Footer.scss"; 
+import "./Footer.scss";
 import footer_icon from "../../assets/images/Mastercard.svg";
 import footer_icon2 from "../../assets/images/Visa-Electron.svg";
 import footer_icon3 from "../../assets/images/Visa-Electron2.svg";
@@ -15,7 +15,10 @@ const Footer = () => {
           02522-669393 <span>Home</span>
         </p>
         <p>A CIMPRESS company © 2001-2025 Vistaprint. All rights reserved.</p>
-        <p>Unless stated otherwise, prices are exclusive of delivery and product options.</p>
+        <p>
+          Unless stated otherwise, prices are exclusive of delivery and product
+          options.
+        </p>
       </div>
 
       <div className="footer-center">

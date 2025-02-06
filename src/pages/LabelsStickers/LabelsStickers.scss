@@ -33,23 +33,37 @@
         color: #fff;
         gap: 20px;
 
-        @include md{
+        @include md {
           align-items: center;
         }
 
         h2 {
           font-size: 40px;
-          
+
+          @include lg {
+            font-size: 35px;
+          }
+
+          @include sm {
+            font-size: 30px;
+          }
         }
 
         p {
           font-size: 20px;
+
+          @include lg {
+            font-size: 18px;
+          }
         }
 
         .labelsStickers-buttons {
           display: flex;
           gap: 10px;
 
+          @include sm {
+            gap: 5px;
+          }
           button {
             width: fit-content;
             background: linear-gradient(135deg, #000, #333);
@@ -64,6 +78,10 @@
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
             position: relative;
             overflow: hidden;
+
+            @include sm {
+              padding: 10px 15px;
+            }
 
             &:hover {
               background: linear-gradient(135deg, #444, #000);
@@ -98,14 +116,13 @@
             }
           }
         }
-
       }
 
       .labelsStickers-banner-img {
         display: flex;
         width: 600px;
 
-        @include lg{
+        @include lg {
           width: 400px;
         }
         @include md {
@@ -143,7 +160,7 @@
         }
 
         .labelsStickers-items {
-          h1 {
+          h2 {
             font-size: 30px;
             margin-bottom: 20px;
 

@@ -35,17 +35,32 @@
 
         h2 {
           font-size: 40px;
-          
+
+          @include lg {
+            font-size: 35px;
+          }
+
+          @include sm {
+            font-size: 30px;
+          }
         }
 
         p {
           font-size: 20px;
+
+          @include lg {
+            font-size: 18px;
+          }
         }
       }
 
       .officeSupplies-banner-img {
         display: flex;
         width: 600px;
+
+        @include lg {
+          width: 500px;
+        }
 
         @include md {
           width: 100%;
@@ -82,7 +97,7 @@
         }
 
         .officeSupplies-items {
-          h1 {
+          h2 {
             font-size: 30px;
             margin-bottom: 20px;
 

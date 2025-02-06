@@ -1,8 +1,9 @@
+import "./Homepage.scss";
+
 import BannerBottom from "../../components/BannerBottom/BannerBottom";
 import BottomItemLists from "../../components/BottomItemLists/BottomItemLists";
 import HomeBanner from "../../components/HomeBanner/HomeBanner";
 import ItemLists from "../../components/ItemLists/ItemLists";
-import "./Homepage.scss";
 
 const Homepage = () => {
   return (

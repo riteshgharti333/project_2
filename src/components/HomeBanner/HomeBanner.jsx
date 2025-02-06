@@ -1,5 +1,6 @@
-import BannerCard from "../BannerCard/BannerCard";
 import "./HomeBanner.scss";
+
+import BannerCard from "../BannerCard/BannerCard";
 import { Banners } from "../../assets/data";
 
 const HomeBanner = () => {

@@ -1,9 +1,8 @@
 import "./VisitingCards.scss";
+
 import banner_img from "../../assets/images/page1.jpg";
 import MainCard from "../../components/MainCard/MainCard";
 import { cards } from "../../assets/data";
-import card2 from "../../assets/images/card2.jpg";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const VisitingCards = () => {
   return (
@@ -25,42 +24,6 @@ const VisitingCards = () => {
           ))}
         </div>
       </div>
-{/* 
-      <div className="visitingCards-container">
-        <div className="visitingCards-container-top">
-        <h2>Creative ways to use your cards</h2>
-        <p>See more business card templates <FaArrowRightLong className="right-arrow"/></p>
-        </div>
-       
-
-        <p className="visitingCards-desc">
-          Looking for something specific? Check out these on-trend templates for
-          top industries.
-        </p>
-
-        <div className="visitingCards-container-cards-2">
-         
-          <div className="special-card-2">
-            <img src={card2} alt="" />
-            <p className="special-cards2-title">Beauty & Spa</p>
-          </div>
-
-          <div className="special-card-2">
-            <img src={card2} alt="" />
-            <p className="special-cards2-title">Beauty & Spa</p>
-          </div>
-
-          <div className="special-card-2">
-            <img src={card2} alt="" />
-            <p className="special-cards2-title">Beauty & Spa</p>
-          </div>
-
-          <div className="special-card-2">
-            <img src={card2} alt="" />
-            <p className="special-cards2-title">Beauty & Spa</p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
