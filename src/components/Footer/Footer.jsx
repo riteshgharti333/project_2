@@ -15,9 +15,8 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-left">
           <p>
-            +91 9829142413{" "}
+            +91 9829142413
             <span>
-              {" "}
               <Link to={"/"}>Home</Link>
             </span>
           </p>
