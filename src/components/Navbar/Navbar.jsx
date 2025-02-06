@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  // Handle click outside the dropdown
+  // Handle click outside the dropdowns
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -44,7 +44,7 @@ const Navbar = () => {
             className="nav-link"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
-            Services{" "}
+            Services
             {isDropdownOpen ? (
               <IoIosArrowUp className="arrow-icon" />
             ) : (
