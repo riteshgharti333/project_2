@@ -1,7 +1,7 @@
 @import "../../styles/responsive.scss";
 
 .navbar {
-  padding: 15px 30px; 
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,9 +41,6 @@
     }
   }
 
-  .mobile-menu {
-  }
-
   .nav-right {
     display: flex;
     align-items: center;
@@ -65,6 +62,7 @@
       transition: color 0.3s ease, transform 0.3s ease;
       cursor: pointer;
 
+
       &:hover {
         color: #007bff;
         transform: translateY(-2px);
@@ -79,17 +77,45 @@
     .dropdown {
       position: relative;
 
+      .nav-link {
+        background: none;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+   
+
+        &:hover {
+          color: #007bff;
+        }
+
+        .arrow-icon{
+          margin-top: 3px;
+          font-size: 20px;
+        }
+      }
+
       .dropdown-content {
-        display: none;
         position: absolute;
         top: 100%;
-        left: -140%;
+        left: -105%;
         background: #fff;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         z-index: 1000;
         min-width: 300px;
         border: 1px solid #007bff;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 
         .dropdown-link {
           display: block;
@@ -98,7 +124,7 @@
           font-weight: 500;
           color: #333;
           text-decoration: none;
-          transition: 0.3s ease, color 0.3s ease;
+          transition: background 0.3s ease, color 0.3s ease;
 
           &:hover {
             background: #007bff;
@@ -107,8 +133,11 @@
         }
       }
 
-      &:hover .dropdown-content {
-        display: block;
+      /* Show dropdown when active */
+      .dropdown-content {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
       }
     }
   }

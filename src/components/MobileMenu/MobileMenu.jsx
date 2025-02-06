@@ -26,6 +26,11 @@ const MobileMenu = () => {
           About Us
         </Link>
 
+        <Link className="menu-item" to="/contact-us" onClick={handleCloseMenu}>
+          Contact Us
+        </Link>
+
+
         <p className="menu-item">Services :</p>
 
         {nav_items.map((item) => (

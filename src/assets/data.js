@@ -256,10 +256,6 @@ export const nav_items = [
     nav_items_link: "labels-stickers",
   },
   {
-    nav_items_name: "Stamps & Ink",
-    nav_items_link: "stamps",
-  },
-  {
     nav_items_name: "Office Supplies",
     nav_items_link: "office-supplies",
   },

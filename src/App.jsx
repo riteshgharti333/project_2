@@ -7,7 +7,6 @@ import VisitingCards from "./pages/VisitingCards/VisitingCards";
 import Posters from "./pages/Posters/Posters";
 import Stationery from "./pages/Stationery/Stationery";
 import LabelsStickers from "./pages/LabelsStickers/LabelsStickers";
-import Stamps from "./pages/Stamps/Stamps";
 import OfficeSupplies from "./pages/OfficeSupplies/OfficeSupplies";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -23,7 +22,6 @@ function App() {
           <Route path="/signs-posters" element={<Posters />} />
           <Route path="/stationery" element={<Stationery />} />
           <Route path="/labels-stickers" element={<LabelsStickers />} />
-          <Route path="/stamps" element={<Stamps />} />
           <Route path="/office-supplies" element={<OfficeSupplies />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
