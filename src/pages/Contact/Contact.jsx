@@ -21,17 +21,17 @@ const Contact = () => {
       <div className="contact-card">
         <div className="contact-card-info">
           <IoCall className="contact-card-info-icon" />
-          <p>+91 12345679</p>
+          <p>+91 9829142413</p>
         </div>
 
         <div className="contact-card-info">
           <FaLocationDot className="contact-card-info-icon" />
-          <p>1234 Maplewood Ave Springfield, IL 62704 USA</p>
+          <p>Near Badri Vihar, Mohalla Shekhpura, Sikar (Raj.)</p>
         </div>
 
         <div className="contact-card-info">
           <IoMail className="contact-card-info-icon" />
-          <p>jhondoe123@gmail.com</p>
+          <p>shahazadalisikar@gmail.com</p>
         </div>
       </div>
 
@@ -48,7 +48,7 @@ const Contact = () => {
 
       <div className="map-address">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3534.5383903172337!2d75.13723947546494!3d27.63880977622188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDM4JzE5LjciTiA3NcKwMDgnMjMuMyJF!5e0!3m2!1sen!2sin!4v1738544135354!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3535.4535201980616!2d75.14512327546389!3d27.61046737623823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDM2JzM3LjciTiA3NcKwMDgnNTEuNyJF!5e0!3m2!1sen!2sin!4v1738843338258!5m2!1sen!2sin"
           width="600"
           height="450"
           style={{ border: "0" }}

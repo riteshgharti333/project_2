@@ -22,7 +22,7 @@ function App() {
           <Route path="/signs-posters" element={<Posters />} />
           <Route path="/stationery" element={<Stationery />} />
           <Route path="/labels-stickers" element={<LabelsStickers />} />
-          <Route path="/office-supplies" element={<OfficeSupplies />} />
+          <Route path="/office-hospital-stationery" element={<OfficeSupplies />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>

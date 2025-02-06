@@ -1,70 +1,84 @@
 @import "../../styles/responsive.scss";
 
 .footer {
-  display: flex;
   background: #000;
-  color: #fff;
-  justify-content: space-between;
-  padding: 60px 60px;
-  align-items: flex-start;
-  overflow: hidden;
+  padding: 60px;
 
-  @include lg {
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-  }
-
-  @include md {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  @include sm {
     padding: 60px 20px;
   }
 
-  .footer-left {
+  .footer-top {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 12px;
-    text-align: center;
-
-    p {
-      color: #a7a6a6;
-
-      &:first-child {
-        color: #fff;
-        font-size: 14px;
-      }
-      span {
-        border-bottom: 2px solid #fff;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .footer-center {
-    display: flex;
-    gap: 10px;
-
-    img {
-      width: 50px;
-      cursor: pointer;
-    }
-  }
-
-  .footer-right {
-    display: flex;
-    gap: 10px;
-    font-size: 25px;
-    cursor: pointer;
+    color: #fff;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
 
     @include lg {
-      font-size: 35px;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
     }
 
-    @include md {
-      font-size: 35px;
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 12px;
+      text-align: center;
+
+      p {
+        color: #a7a6a6;
+
+        &:first-child {
+          color: #fff;
+          font-size: 14px;
+        }
+        span {
+          border-bottom: 2px solid #fff;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer-right {
+      display: flex;
+      gap: 10px;
+      font-size: 30px;
+      cursor: pointer;
+
+      @include lg {
+        font-size: 35px;
+      }
+
+      @include md {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    @include lg {
+      margin-top: 30px;
+    }
+
+    .star-link {
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
     }
   }
 }

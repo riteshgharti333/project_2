@@ -256,8 +256,8 @@ export const nav_items = [
     nav_items_link: "labels-stickers",
   },
   {
-    nav_items_name: "Office Supplies",
-    nav_items_link: "office-supplies",
+    nav_items_name: "Office & Hospital Stationery Supply",
+    nav_items_link: "office-hospital-stationery",
   },
 ];
 
