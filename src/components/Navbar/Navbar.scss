@@ -48,7 +48,7 @@
       gap: 25px;
 
       @include md {
-        display: none; // Hide nav-right on medium screens
+        // display: none; 
       }
 
       .nav-link {
@@ -77,7 +77,7 @@
           display: none;
           position: absolute;
           top: 100%;
-          left: -100%;
+          left: -130%;
           background: #fff;
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           border-radius: 5px;
@@ -93,7 +93,7 @@
             font-weight: 500;
             color: #333;
             text-decoration: none;
-            transition: background 0.3s ease, color 0.3s ease;
+            transition:  0.3s ease, color 0.3s ease;
 
             &:hover {
               background: #007bff;
@@ -103,7 +103,7 @@
         }
 
         &:hover .dropdown-content {
-          display: block; // Show dropdown on hover
+          display: block; 
         }
       }
     }
