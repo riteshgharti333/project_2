@@ -20,7 +20,7 @@ const VisitingCards = () => {
 
         <div className="visiting-cards">
           {cards.map((card) => (
-            <MainCard card={card} />
+            <MainCard key={card.title} card={card} />
           ))}
         </div>
       </div>
