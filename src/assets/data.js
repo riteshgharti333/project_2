@@ -3,6 +3,24 @@ import banner_2 from "../assets/images/home_banner_bottom.png";
 import product from "../assets/images/visiting-card.png";
 import maincard1 from "../assets/images/cards1.jpg";
 
+import bill1 from "../assets/images/bill/bill1.jpeg";
+import bill2 from "../assets/images/bill/bill2.jpeg";
+import bill3 from "../assets/images/bill/bill3.jpeg";
+import bill4 from "../assets/images/bill/bill4.jpeg";
+import bill5 from "../assets/images/bill/bill5.jpeg";
+import bill6 from "../assets/images/bill/bill6.jpeg";
+import bill7 from "../assets/images/bill/bill7.jpeg";
+import bill8 from "../assets/images/bill/bill8.jpeg";
+import bill9 from "../assets/images/bill/bill9.jpeg";
+import bill10 from "../assets/images/bill/bill10.jpeg";
+import bill11 from "../assets/images/bill/bill11.jpeg";
+import bill12 from "../assets/images/bill/bill12.jpeg";
+import bill13 from "../assets/images/bill/bill13.jpeg";
+import bill14 from "../assets/images/bill/bill14.jpeg";
+import bill15 from "../assets/images/bill/bill15.jpeg";
+import bill16 from "../assets/images/bill/bill16.jpeg";
+import bill17 from "../assets/images/bill/bill17.jpeg";
+
 export const Banners = [
   {
     image: banner_1,
@@ -366,4 +384,36 @@ export const sidebar_Content = [
       },
     ],
   },
+];
+
+export const bills = [
+  { img: bill4, title: "Bill Book Size 1x4" },
+  { img: bill3, title: "Bill Book Size 1x4 Single Color" },
+  { img: bill2, title: "Latterped size 1x4" },
+  { img: bill5, title: "Single Color" },
+  { img: bill14, title: "Small Size" },
+
+  { img: bill1, title: "Estimate Book Size 4.5x7.5 Inch" },
+  { img: bill17, title: "Estimate Perfoting Ped Size 4.5x7.5" },
+  { img: bill16, title: "Rough Estimate Book Size 4.5x7.5" },
+  { img: bill8, title: "Bill Book Size 7x9 Inch" },
+  { img: bill10, title: "Latterped Size 7x9 Inch" },
+  { img: bill9, title: "Receipt Book Size 4.25x7.25 Inch" },
+
+  { img: bill6, title: "Bill Book Size 1x5 Single Color" },
+
+  // { img: bill9, title: "Receipt Book" },
+  { img: bill7, title: "Medical Bill Size 1x10" },
+
+
+  { img: bill11, title: "Cash Voucher Size 4.25x7.25 Inch" },
+
+  // { img: bill12, title: "Receipt Book" },
+
+  { img: bill13, title: "Hotel Rasid Book" },
+
+  { img: bill12, title: "Voucher Book Size 4.25x7.25 Inch" },
+
+  { img: bill15, title: "Bill Book Size 4.5x7.5 Inch" },
+
 ];
