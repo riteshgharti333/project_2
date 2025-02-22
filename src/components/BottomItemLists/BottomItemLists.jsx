@@ -52,6 +52,18 @@ const BottomItemLists = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          <div className="mobile-item">
+            {categoryItem.category_product.map((item) => (
+              <div className="mobile-item-card">
+                <img src={item.image} alt="" />
+                <p>{item.title}</p>
+              </div>
+            ))}
+          </div>
+
+
+
         </div>
       ))}
     </div>

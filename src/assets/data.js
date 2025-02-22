@@ -45,8 +45,6 @@ import visitingImg8 from "../assets/images/visitingcardsimg/visiting8.jpeg";
 import visitingImg9 from "../assets/images/visitingcardsimg/visiting9.jpeg";
 import visitingImg10 from "../assets/images/visitingcardsimg/visiting10.jpeg";
 
-
-
 // marriage matrials img
 
 import marriagematerial1 from "../assets/images/marriagematerialsImg/marriagematerials1.jpeg";
@@ -72,13 +70,12 @@ import resturantAccessories7 from "../assets/images/ResturantAccessoriesImg/rest
 import banner1 from "../assets/images/banner1.jpeg";
 import banner2 from "../assets/images/banner2.jpeg";
 
-
 export const Banners = [
   {
     image: banner2,
     // title: "My Name, My Pride",
     // desc: "100 Visiting Cards at Rs 200",
-    // buttons: ["Shop Now"], 
+    // buttons: ["Shop Now"],
   },
 
   {
@@ -125,168 +122,52 @@ export const category = [
         link: "signs-posters",
       },
 
-      
       {
         image: bill7,
         title: "Office & Hospital Stationery Supply",
         link: "office-hospital-stationery",
       },
     ],
+
+    
   },
-
-  // {
-  //   category_name: "Our Most Popular Products",
-
-  //   category_product: [
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   category_name: "Trending Products",
-
-  //   category_product: [
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-
-  //     {
-  //       image: product,
-  //       title: "Visiting Card",
-  //     },
-  //   ],
-  // },
 
   {
     category_name: "Explore More",
 
     category_product: [
       {
-        image: product,
+        image: visitingImg6,
         title: "Visiting Card",
+        link: "visiting-cards",
       },
 
       {
-        image: product,
-        title: "Visiting Card",
+        image: marriagematerial1,
+        title: "Marriage Materials",
+        link: "marriage-materials",
       },
 
       {
-        image: product,
-        title: "Visiting Card",
+        image: resturantAccessories6,
+        title: "Resturant Accessorie",
+        link: "resturant-accessories",
       },
 
       {
-        image: product,
-        title: "Visiting Card",
+        image: poster1,
+        title: "Signs, Posters & Marketing Materials",
+        link: "signs-posters",
       },
 
       {
-        image: product,
-        title: "Visiting Card",
-      },
-      {
-        image: product,
-        title: "Visiting Card",
-      },
-
-      {
-        image: product,
-        title: "Visiting Card",
-      },
-
-      {
-        image: product,
-        title: "Visiting Card",
-      },
-
-      {
-        image: product,
-        title: "Visiting Card",
-      },
-
-      {
-        image: product,
-        title: "Visiting Card",
+        image: bill7,
+        title: "Office & Hospital Stationery Supply",
+        link: "office-hospital-stationery",
       },
     ],
+
+    
   },
 ];
 
@@ -311,7 +192,6 @@ export const nav_items = [
     nav_items_name: "Office & Hospital Stationery Supply",
     nav_items_link: "office-hospital-stationery",
   },
- 
 ];
 
 export const cards = [
