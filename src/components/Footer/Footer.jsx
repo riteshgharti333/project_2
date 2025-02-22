@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>Copyright © 2025 bk welfare society. All rights reserved</p>
+        <p>Copyright © 2025 Bs Printer. All rights reserved</p>
         <a
           href="https://www.Wingstarnarketing.com"
           target="_blank"

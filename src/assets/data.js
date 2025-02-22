@@ -93,6 +93,40 @@ export const Banners = [
   // },
 ];
 
+
+export const aboutCard = [
+
+    {
+      image: visitingImg6,
+      title: "Visiting Card",
+      link: "visiting-cards",
+    },
+
+    {
+      image: marriagematerial1,
+      title: "Marriage Materials",
+      link: "marriage-materials",
+    },
+
+    {
+      image: resturantAccessories6,
+      title: "Resturant Accessorie",
+      link: "resturant-accessories",
+    },
+
+    {
+      image: poster1,
+      title: "Signs, Posters & Marketing Materials",
+      link: "signs-posters",
+    },
+
+    {
+      image: bill7,
+      title: "Office & Hospital Stationery Supply",
+      link: "office-hospital-stationery",
+    },
+]
+
 export const category = [
   {
     category_name: "Explore All Categories",

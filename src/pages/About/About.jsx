@@ -6,12 +6,15 @@ import icon2 from "../../assets/images/svg-icons/icon2.svg";
 import icon3 from "../../assets/images/svg-icons/icon3.svg";
 import icon4 from "../../assets/images/svg-icons/icon4.svg";
 import icon5 from "../../assets/images/svg-icons/icon5.svg";
-import card1 from "../../assets/images/cards1.jpg";
+
+import card1 from "../../assets/images/about1.jpeg";
+import card2 from "../../assets/images/about2.jpeg";
 
 import mission1 from "../../assets/images/svg-icons/mission1.svg";
 import mission2 from "../../assets/images/svg-icons/mission2.svg";
 import mission3 from "../../assets/images/svg-icons/mission3.svg";
 import mission4 from "../../assets/images/svg-icons/mission4.svg";
+import { aboutCard } from "../../assets/data";
 
 const About = () => {
   return (
@@ -60,7 +63,7 @@ const About = () => {
             </p>
 
             <div className="about-content2-img">
-              <img src={card1} alt="" />
+              <img src={card2} alt="" />
             </div>
           </div>
         </div>
@@ -172,40 +175,15 @@ const About = () => {
           <h1>Our Services</h1>
 
           <div className="about-content5-cards">
-            <div className="about-content5-card">
-              <img src={card1} alt="" />
-              <p>
-                Flex & Vinyl Printing (Hoardings, Banners, Posters, Vehicle
-                Branding)
-              </p>
-            </div>
-
-            <div className="about-content5-card">
-              <img src={card1} alt="" />
-              <p>
-                Corporate Stationery (Letterheads, Envelopes, Business Cards)
-              </p>
-            </div>
-
-            <div className="about-content5-card">
-              <img src={card1} alt="" />
-              <p>Wedding & Invitation Cards</p>
-            </div>
-
-            <div className="about-content5-card">
-              <img src={card1} alt="" />
-              <p>Packaging & Labels</p>
-            </div>
-
-            <div className="about-content5-card">
-              <img src={card1} alt="" />
-              <p>Screen Printing & Offset Printing</p>
-            </div>
-
-            <div className="about-content5-card">
-              <img src={card1} alt="" />
-              <p>Customized Printing Solutions</p>
-            </div>
+            {aboutCard.map((item) => (
+              <Link to={`/${item.link}`}>
+               <div className="about-content5-card">
+                <img src={item.image} alt="" />
+                <p>{item.title}</p>
+              </div>
+              </Link>
+             
+            ))}
           </div>
         </div>
 
