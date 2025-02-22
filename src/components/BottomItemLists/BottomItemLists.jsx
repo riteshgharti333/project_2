@@ -10,7 +10,7 @@ import { Navigation } from "swiper/modules";
 const BottomItemLists = () => {
   return (
     <div className="bottomItemLists">
-      {category.slice(3, 4).map((categoryItem, index) => (
+      {category.slice(1, 2).map((categoryItem, index) => (
         <div key={index} className="categories">
           <h2>{categoryItem.category_name}</h2>
 

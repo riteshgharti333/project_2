@@ -1,10 +1,25 @@
 import "./Posters.scss";
 
 import poster_img from "../../assets/images/poster.jpg";
-import MainCard from "../../components/MainCard/MainCard";
-import { cards } from "../../assets/data";
+
+import { cards, postersImg } from "../../assets/data";
+import { useState } from "react";
+import FullImage from "../../components/FullImage/FullImage";
 
 const Posters = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (imageSrc) => {
+    setSelectedImage(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
+
   return (
     <div className="posters">
       <div className="posters-content">
@@ -28,14 +43,26 @@ const Posters = () => {
               <h2>Best Sellers</h2>
 
               <div className="posters-cards">
-                {cards.map((card) => (
-                  <MainCard key={card} card={card} cardDesign="postersCard" />
+                {postersImg.map((item) => (
+                  <div
+                    className="posters-card"
+                    key={item.img}
+                    onClick={() => openModal(item.img)}
+                  >
+                    <img src={item.img} alt={item.img} />
+                  </div>
                 ))}
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <FullImage
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        imageSrc={selectedImage}
+      />
     </div>
   );
 };

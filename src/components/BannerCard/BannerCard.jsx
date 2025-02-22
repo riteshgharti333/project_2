@@ -7,7 +7,7 @@ const BannerCard = ({ banner }) => {
         <img src={banner.image} alt="" />
       </div>
 
-      <div className="bannerCard-info">
+      {/* <div className="bannerCard-info">
         <h2>{banner.title}</h2>
         <p>{banner.desc}</p>
         <div className="bannerCard-buttons">
@@ -15,7 +15,7 @@ const BannerCard = ({ banner }) => {
             <button key={index}>{btn}</button>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

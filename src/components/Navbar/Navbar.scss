@@ -1,7 +1,7 @@
 @import "../../styles/responsive.scss";
 
 .navbar {
-  padding: 15px 30px;
+  padding: 0px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,31 +13,18 @@
   z-index: 998;
 
   @include md {
-    padding: 15px;
+    padding: 0px 10px;
   }
 
   @include sm {
-    padding: 15px 5px;
+    padding: 0px 0px;
   }
 
   .nav-left {
     .logo {
-      h1 {
-        color: #6b195a;
-        font-size: 30px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        margin: 0;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: #007bff;
-        }
-
-        @include md {
-          text-align: center;
-        }
-      }
+    img{
+      width: 100px;
+    }
     }
   }
 
@@ -87,7 +74,7 @@
         align-items: center;
         gap: 5px;
         cursor: pointer;
-        transition: color 0.3s ease;
+        transition: color 0.3s ease, transform 0.3s ease;
    
 
         &:hover {

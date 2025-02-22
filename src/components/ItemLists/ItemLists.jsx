@@ -11,7 +11,7 @@ import { Navigation } from "swiper/modules";
 const ItemLists = () => {
   return (
     <div className="itemLists">
-      {category.slice(0, 3).map((categoryItem, index) => (
+      {category.slice(0, 1).map((categoryItem, index) => (
         <div key={index} className="categories">
           <h2>{categoryItem.category_name}</h2>
 
@@ -49,10 +49,23 @@ const ItemLists = () => {
           >
             {categoryItem.category_product.map((item, index) => (
               <SwiperSlide key={index}>
-                <CategoryItem image={item.image} title={item.title} />
+                <CategoryItem
+                  image={item.image}
+                  title={item.title}
+                  link={item.link}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
+
+          <div className="mobile-item">
+            {categoryItem.category_product.map((item) => (
+              <div className="mobile-item-card">
+                <img src={item.image} alt="" />
+                <p>{item.title}</p>
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </div>

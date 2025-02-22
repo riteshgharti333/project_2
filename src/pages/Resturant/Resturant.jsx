@@ -1,12 +1,12 @@
-import "./Stationery.scss";
+import "./Resturant.scss";
 
 import poster_img from "../../assets/images/poster.jpg";
-import MainCard from "../../components/MainCard/MainCard";
-import { cards, marriageMaterialsImg } from "../../assets/data";
+
+import { cards, postersImg, ResturantAccessories } from "../../assets/data";
 import { useState } from "react";
 import FullImage from "../../components/FullImage/FullImage";
 
-const Stationery = () => {
+const Resturant = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -21,27 +21,31 @@ const Stationery = () => {
   };
 
   return (
-    <div className="stationery">
-      <div className="stationery-content">
-        <div className="stationery-banner">
-          <div className="stationery-banner-info">
-            <h2>Marriage Materials</h2>
-            <p>Create a cohesive set of custom office supplies.</p>
+    <div className="resturant">
+      <div className="resturant-content">
+        <div className="resturant-banner">
+          <div className="resturant-banner-info">
+            <h2>Signs, Posters & Marketing Materials</h2>
+            <p>
+              Stand out with custom signage and advertising materials for your
+              business
+            </p>
           </div>
-          <div className="stationery-banner-img">
+
+          <div className="resturant-banner-img">
             <img src={poster_img} alt="" />
           </div>
         </div>
 
-        <div className="stationery-lists-container">
-          <div className="stationery-lists">
-            <div className="stationery-items">
+        <div className="resturant-lists-container">
+          <div className="resturant-lists">
+            <div className="resturant-items">
               <h2>Best Sellers</h2>
 
-              <div className="stationery-cards">
-                {marriageMaterialsImg.map((item) => (
+              <div className="resturant-cards">
+                {ResturantAccessories.map((item) => (
                   <div
-                    className="stationery-card"
+                    className="resturant-card"
                     key={item.img}
                     onClick={() => openModal(item.img)}
                   >
@@ -53,6 +57,7 @@ const Stationery = () => {
           </div>
         </div>
       </div>
+
       <FullImage
         isOpen={isModalOpen}
         onClose={closeModal}
@@ -62,4 +67,4 @@ const Stationery = () => {
   );
 };
 
-export default Stationery;
+export default Resturant;

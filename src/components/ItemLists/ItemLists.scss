@@ -19,8 +19,32 @@
       }
     }
 
+    .mobile-item{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+      align-items:flex-end;
+
+      @media (min-width: 481px) {
+        display: none;
+      }
+      .mobile-item-card{
+        img{
+          width: 100%;
+        }
+
+        p{
+          font-weight: 600;
+        }
+      }
+    }
+
     .swiper {
       position: relative;
+
+      @include sm{
+        display: none;
+      }
 
       .swiper-button-next,
       .swiper-button-prev {
@@ -60,5 +84,7 @@
         left: 10px;
       }
     }
+
+
   }
 }

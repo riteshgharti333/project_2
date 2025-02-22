@@ -2,9 +2,24 @@ import "./VisitingCards.scss";
 
 import banner_img from "../../assets/images/page1.jpg";
 import MainCard from "../../components/MainCard/MainCard";
-import { cards } from "../../assets/data";
+import { cards, visitngCardsImg } from "../../assets/data";
+import { useState } from "react";
+import FullImage from "../../components/FullImage/FullImage";
 
 const VisitingCards = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (imageSrc) => {
+    setSelectedImage(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
+
   return (
     <div className="visitingCards">
       <div className="visitingCards-banner">
@@ -14,16 +29,26 @@ const VisitingCards = () => {
 
       <div className="visitingCards-container">
         <h2>Shop By Shapes</h2>
-        <p className="visitingCards-desc">
-          Select from various shapes & sizes.
-        </p>
 
         <div className="visiting-cards">
-          {cards.map((card) => (
-            <MainCard key={card.title} card={card} />
+          {visitngCardsImg.map((item) => (
+            <div
+              className="visiting-card"
+              key={item.img}
+              onClick={() => openModal(item.img)}
+            >
+              <img src={item.img} alt={item.img} />
+            </div>
           ))}
         </div>
       </div>
+
+      
+      <FullImage
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        imageSrc={selectedImage}
+      />
     </div>
   );
 };

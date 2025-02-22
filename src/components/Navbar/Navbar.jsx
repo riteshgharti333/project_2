@@ -6,6 +6,8 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
+import logo from "../../assets/images/logo2.png"
+
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -29,7 +31,7 @@ const Navbar = () => {
       <div className="nav-left">
         <div className="logo">
           <Link to={"/"}>
-            <h1>LOGO</h1>
+            <img src={logo} alt="" />
           </Link>
         </div>
       </div>
