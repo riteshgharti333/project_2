@@ -88,8 +88,6 @@ export const Banners = [
   {
     image: banner2,
   },
-
- 
 ];
 
 
