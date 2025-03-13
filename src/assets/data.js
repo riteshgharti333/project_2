@@ -67,6 +67,19 @@ import resturantAccessories5 from "../assets/images/ResturantAccessoriesImg/rest
 import resturantAccessories6 from "../assets/images/ResturantAccessoriesImg/resturantaccessories6.jpeg";
 import resturantAccessories7 from "../assets/images/ResturantAccessoriesImg/resturantaccessories7.jpeg";
 
+// printing
+import print1 from "../assets/images/printingImg/printing1.jpeg";
+import print2 from "../assets/images/printingImg/printing2.jpeg"; 
+import print3 from "../assets/images/printingImg/printing3.jpeg"; 
+import print4 from "../assets/images/printingImg/printing4.jpeg"; 
+import print5 from "../assets/images/printingImg/printing5.jpeg"; 
+import print6 from "../assets/images/printingImg/printing6.jpeg"; 
+import print7 from "../assets/images/printingImg/printing7.jpeg"; 
+import print8 from "../assets/images/printingImg/printing8.jpeg"; 
+
+
+
+
 import banner1 from "../assets/images/banner1.jpeg";
 import banner2 from "../assets/images/banner2.jpeg";
 
@@ -225,6 +238,10 @@ export const nav_items = [
   {
     nav_items_name: "Office & Hospital Stationery Supply",
     nav_items_link: "office-hospital-stationery",
+  },
+  {
+    nav_items_name: "Pen & T-Shirt Printing",
+    nav_items_link: "printing-t-shirt-pen",
   },
 ];
 
@@ -490,3 +507,17 @@ export const ResturantAccessories = [
     img: resturantAccessories2,
   },
 ];
+
+
+export const printImg = [
+  {img:print1},
+  {img:print2},
+  {img:print3},
+  {img:print4},
+  {img:print5},
+  {img:print6},
+  {img:print7},
+  {img:print8},
+
+
+]

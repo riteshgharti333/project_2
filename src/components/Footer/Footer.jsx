@@ -1,8 +1,5 @@
 import "./Footer.scss";
 
-import footer_icon from "../../assets/images/Mastercard.svg";
-import footer_icon2 from "../../assets/images/Visa-Electron.svg";
-import footer_icon3 from "../../assets/images/Visa-Electron2.svg";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa6";

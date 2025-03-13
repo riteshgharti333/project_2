@@ -12,6 +12,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Resturant from "./pages/Resturant/Resturant";
 import { useEffect } from "react";
+import Printing from "./pages/Printing/Printing";
 
 function App() {
 
@@ -40,8 +41,7 @@ function App() {
           <Route path="/labels-stickers" element={<LabelsStickers />} />
           <Route path="/office-hospital-stationery" element={<OfficeSupplies />} />
           <Route path="/resturant-accessories" element={<Resturant />} />
-
-
+          <Route path="/printing-t-shirt-pen" element={<Printing />} />          
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>

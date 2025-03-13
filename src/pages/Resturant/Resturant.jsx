@@ -26,10 +26,6 @@ const Resturant = () => {
         <div className="resturant-banner">
           <div className="resturant-banner-info">
             <h2>Signs, Posters & Marketing Materials</h2>
-            <p>
-              Stand out with custom signage and advertising materials for your
-              business
-            </p>
           </div>
 
           <div className="resturant-banner-img">
