@@ -1,6 +1,3 @@
-import banner_1 from "../assets/images/home_banner_1.png";
-import banner_2 from "../assets/images/home_banner_bottom.png";
-import product from "../assets/images/visiting-card.png";
 import maincard1 from "../assets/images/cards1.jpg";
 
 // Bill Img
