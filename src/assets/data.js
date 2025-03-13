@@ -83,24 +83,13 @@ import banner2 from "../assets/images/banner2.jpeg";
 export const Banners = [
   {
     image: banner2,
-    // title: "My Name, My Pride",
-    // desc: "100 Visiting Cards at Rs 200",
-    // buttons: ["Shop Now"],
   },
 
   {
     image: banner2,
-    // title: "Special Gifts for your favourite people",
-    // desc: "Start at Rs 140",
-    // buttons: ["Shop Now"],
   },
 
-  // {
-  //   image: banner_2,
-  //   title: "Preserve your cherished moments",
-  //   desc: "Start at Rs 650",
-  //   buttons: ["Photo Albums", "Layflat Photo Albums"], // Two buttons
-  // },
+ 
 ];
 
 
