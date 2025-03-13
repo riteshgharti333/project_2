@@ -48,7 +48,11 @@ const BottomItemLists = () => {
           >
             {categoryItem.category_product.map((item, index) => (
               <SwiperSlide key={index}>
-                <CategoryItem image={item.image} title={item.title} />
+                <CategoryItem
+                  image={item.image}
+                  title={item.title}
+                  link={item.link}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -61,9 +65,6 @@ const BottomItemLists = () => {
               </div>
             ))}
           </div>
-
-
-
         </div>
       ))}
     </div>
